@@ -1,0 +1,1 @@
+exports.handle = require('./build/js/packages/backend-framework-example-service/kotlin/backend-framework-example-service').handle
