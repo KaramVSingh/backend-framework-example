@@ -8,3 +8,5 @@ kotlin-js-store
 
 # Ignore Gradle build output directory
 build
+
+.idea
