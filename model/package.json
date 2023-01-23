@@ -1,0 +1,8 @@
+{
+    "name": "model",
+    "version": "1.0.0",
+    "files": [
+        "build/smithyprojections/model/source/model/model.json",
+        "index.js"
+    ]
+}
