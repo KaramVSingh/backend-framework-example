@@ -7,9 +7,10 @@ export class ServiceStack extends Stack {
     constructor(scope: Construct, id: string, props: StackProps) {
         super(scope, id, props)
         const api = new Service(this, 'api', {
-            runtime: Runtime.NODEJS_16_X,
-            assetsPackage: 'assets',
+            runtime: Runtime.JAVA_11,
+            assetsPackage: '../service/build/libs/service.jar',
             modelPackage: '@karamvsingh/backend-framework-example-model',
+            servicePackage: 'com.github.karamvsingh.backendframeworkexample',
             apiName: 'api',
             functionName: 'backend-lambda',
         })

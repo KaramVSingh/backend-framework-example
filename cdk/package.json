@@ -10,7 +10,7 @@
         "cdk": "cdk"
     },
     "devDependencies": {
-        "@karamvsingh/backend-framework-cdk-constructs": "0.3.0",
+        "@karamvsingh/backend-framework-cdk-constructs": "0.4.1",
         "@types/node": "18.11.9",
         "prettier": "^2.7.1",
         "aws-cdk": "2.54.0",

@@ -1,5 +1,5 @@
 $version: "2"
-namespace github.karamvsingh.backendframeworkexample
+namespace com.github.karamvsingh.backendframeworkexample
 
 @error("client")
 @retryable

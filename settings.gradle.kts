@@ -1,7 +1,7 @@
 pluginManagement {
     plugins {
         id("software.amazon.smithy").version("0.6.0")
-        kotlin("js").version("1.8.0")
+        kotlin("jvm").version("1.8.0")
     }
     repositories {
         gradlePluginPortal()

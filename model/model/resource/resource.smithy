@@ -1,5 +1,5 @@
 $version: "2"
-namespace github.karamvsingh.backendframeworkexample
+namespace com.github.karamvsingh.backendframeworkexample
 
 resource Resource {
     identifiers: { organizationId: OrganizationId, resourceId: ResourceId },
