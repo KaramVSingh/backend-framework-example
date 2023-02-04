@@ -7,6 +7,7 @@ plugins {
 dependencies {
     testImplementation(kotlin("test"))
     implementation("com.github.karamvsingh.backend-framework:service-library:0.1.0")
+    model(project(":model"))
 }
 
 kotlin {
