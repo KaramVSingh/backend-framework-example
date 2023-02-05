@@ -57,6 +57,13 @@ structure ManipulateResourceInput for Resource {
 
     @httpQuery("query")
     query: String
+
+    structure: MyStructure
+}
+
+structure MyStructure {
+    memberOne: String
+    memberTwo: String
 }
 
 @output
