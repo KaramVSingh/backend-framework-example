@@ -8,7 +8,7 @@ import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent
 @Suppress("unused")
 class FrameworkHandler : RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
     override fun handleRequest(input: APIGatewayProxyRequestEvent, context: Context): APIGatewayProxyResponseEvent {
-        context.logger.log("Running request")
+        context.logger.log("Running request: ${input}")
 
         return APIGatewayProxyResponseEvent().apply {
             statusCode = 200

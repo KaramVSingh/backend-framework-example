@@ -56,6 +56,7 @@ structure ManipulateResourceInput for Resource {
     label: String
 
     @httpQuery("query")
+    @length(min: 0, max: 20)
     query: String
 
     structure: MyStructure
