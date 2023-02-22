@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm")
+    id("com.google.devtools.ksp").version("1.8.0-1.0.8")
     id("com.github.johnrengelman.shadow").version("2.0.4")
     id("com.github.karamvsingh.backend-framework.gradle-plugin").version("0.1.0")
 }

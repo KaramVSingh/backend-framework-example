@@ -48,6 +48,7 @@ structure PutChildResourceInput for ChildResource {
     $resourceId
 
     @required
+    @httpHeader("wow")
     data: String
 }
 
@@ -55,6 +56,7 @@ structure PutChildResourceInput for ChildResource {
 structure PutChildResourceOutput {
     @required
     @notProperty
+    @httpHeader("wow")
     name: String
 }
 
