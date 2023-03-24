@@ -10,7 +10,6 @@ export class ServiceStack extends Stack {
             runtime: Runtime.JAVA_11,
             assetsPackage: '../service/build/libs/service.jar',
             modelPackage: '@karamvsingh/backend-framework-example-model',
-            servicePackage: 'com.github.karamvsingh.backendframeworkexample',
             apiName: 'api',
             functionName: 'backend-lambda',
         })
