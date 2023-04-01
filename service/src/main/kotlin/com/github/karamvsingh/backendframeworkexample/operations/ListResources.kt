@@ -7,7 +7,7 @@ import com.github.karamvsingh.backendframeworkexample.ListResourcesInput
 import com.github.karamvsingh.backendframeworkexample.ListResourcesOutput
 
 @Operation("com.github.karamvsingh.backendframeworkexample", "ListResources")
-fun getResource(input: ListResourcesInput, context: Context): ListResourcesOutput {
+fun listResources(input: ListResourcesInput, context: Context): ListResourcesOutput {
     val label = input.label
     val list = listOf(
         ListResourceShape(some = "SOME", structure = label),
