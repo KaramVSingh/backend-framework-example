@@ -4,46 +4,8 @@ namespace com.github.karamvsingh.backendframeworkexample
 resource Resource {
     identifiers: { organizationId: OrganizationId, resourceId: ResourceId },
     read: GetResource,
-    list: ListResources,
     operations: [ ManipulateResource ],
     resources: [ ChildResource ]
-}
-
-@pattern("^[A-Za-z0-9 ]+$")
-string ResourceId
-
-@pattern("^[A-Za-z0-9 ]+$")
-@length(min: 0, max: 20)
-string OrganizationId
-
-@readonly
-operation ListResources {
-    input: ListResourcesInput,
-    output: ListResourcesOutput,
-}
-
-@input
-structure ListResourcesInput for Resource {
-    @httpQuery("someLabel")
-    label: String
-}
-
-@output
-structure ListResourcesOutput {
-    resources: ListResourceList
-
-    @httpHeader("numberOfResources")
-    number: String
-}
-
-list ListResourceList {
-    member: ListResourceShape
-}
-
-structure ListResourceShape {
-    @required
-    some: String
-    structure: String
 }
 
 @readonly
@@ -104,3 +66,10 @@ structure ManipulateResourceOutput {
     @notProperty
     name: String
 }
+
+@pattern("^[A-Za-z0-9 ]+$")
+string ResourceId
+
+@pattern("^[A-Za-z0-9 ]+$")
+@length(min: 0, max: 20)
+string OrganizationId
