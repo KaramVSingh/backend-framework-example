@@ -8,6 +8,5 @@ import com.github.karamvsingh.backendframeworkexample.GetResourceOutput
 
 @Operation("com.github.karamvsingh.backendframeworkexample", "GetResource")
 fun getResource(input: GetResourceInput, context: Context): GetResourceOutput {
-    throw ResourceNotFound("WOW")
-    return GetResourceOutput("resource-name")
+    return GetResourceOutput(input.organizationId)
 }

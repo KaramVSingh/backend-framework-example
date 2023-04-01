@@ -7,5 +7,5 @@ import com.github.karamvsingh.backendframeworkexample.ListChildResourcesOutput
 
 @Operation("com.github.karamvsingh.backendframeworkexample", "ListChildResources")
 fun listChildResources(input: ListChildResourcesInput, context: Context): ListChildResourcesOutput {
-    return ListChildResourcesOutput(listOf("name1", "name2"))
+    return ListChildResourcesOutput(listOf(input.organizationId, input.resourceId))
 }

@@ -7,5 +7,5 @@ import com.github.karamvsingh.backendframeworkexample.GetChildResourceOutput
 
 @Operation("com.github.karamvsingh.backendframeworkexample", "GetChildResource")
 fun getChildResource(input: GetChildResourceInput, context: Context): GetChildResourceOutput {
-    return GetChildResourceOutput("resource-name")
+    return GetChildResourceOutput(input.childId)
 }

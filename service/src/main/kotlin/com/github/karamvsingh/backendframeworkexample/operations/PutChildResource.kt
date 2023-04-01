@@ -7,5 +7,5 @@ import com.github.karamvsingh.backendframeworkexample.PutChildResourceOutput
 
 @Operation("com.github.karamvsingh.backendframeworkexample", "PutChildResource")
 fun putChildResource(input: PutChildResourceInput, context: Context): PutChildResourceOutput {
-    return PutChildResourceOutput("name25")
+    return PutChildResourceOutput(input.data)
 }
