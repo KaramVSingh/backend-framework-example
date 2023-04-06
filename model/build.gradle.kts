@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation("software.amazon.smithy:smithy-model:1.27.0")
+    implementation("software.amazon.smithy:smithy-model:1.29.0")
 }
 
 configure<software.amazon.smithy.gradle.SmithyExtension> {}
