@@ -30,7 +30,7 @@ This should build the API, deploy it, create all the relevant resources in your 
 ## Example API implementation:
 ```
 @Operation("com.github.karamvsingh.backendframeworkexample", "GetResource")
-fun getResource(input: GetResourceInput, context: Context): GetResourceOutput {
+suspend fun getResource(input: GetResourceInput, context: Context): GetResourceOutput {
     return GetResourceOutput(input.organizationId)
 }
 ```
